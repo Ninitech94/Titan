@@ -1,3 +1,14 @@
+<script setup>
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
+
+const navigateTo = async (routeName) => {
+  await router.push({ name: routeName })
+  window.scrollTo({ top: 0, behavior: 'smooth' })
+}
+</script>
+
 <template>
   <footer class="footer">
     <div class="container">
@@ -23,17 +34,17 @@
         <div class="footer-section">
           <h3>Navigacija</h3>
           <ul>
-            <li><router-link to="/">POČETNA</router-link></li>
-            <li><router-link to="/under-construction">Objekti u izgradnji</router-link></li>
-            <li><router-link to="/about">O nama</router-link></li>
+            <li><a href="#" @click.prevent="navigateTo('home')">POČETNA</a></li>
+            <li><a href="#" @click.prevent="navigateTo('under-construction')">Objekti u izgradnji</a></li>
+            <li><a href="#" @click.prevent="navigateTo('about')">O nama</a></li>
           </ul>
         </div>
         
         <div class="footer-section">
           <h3>Naši projekti</h3>
           <ul>
-            <li><a href="#">Dejana Dinića, Pantelej</a></li>
-            <li><a href="#">Vojislava Ilica 19, Medijana</a></li>
+            <li><a href="#" @click.prevent="navigateTo('under-construction')">Dejana Dinića, Pantelej</a></li>
+            <li><a href="#" @click.prevent="navigateTo('under-construction')">Vojislava Ilica 19, Medijana</a></li>
           </ul>
         </div>
       </div>

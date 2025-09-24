@@ -9,8 +9,9 @@ const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value
 }
 
-const navigateTo = (routeName) => {
-  router.push({ name: routeName })
+const navigateTo = async (routeName) => {
+  await router.push({ name: routeName })
+  window.scrollTo({ top: 0, behavior: 'smooth' })
   isMenuOpen.value = false
 }
 </script>
@@ -79,8 +80,6 @@ const navigateTo = (routeName) => {
   height: 63px;
   width: auto;
 }
-
-
 
 .nav-menu {
   display: flex;

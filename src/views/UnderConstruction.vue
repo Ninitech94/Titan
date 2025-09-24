@@ -32,7 +32,7 @@
             <p class="progress-text">0% završeno</p>
             <div class="button-group">
               <!-- <button class="info-button">Više informacija</button> -->
-              <a href="https://drive.google.com/uc?export=download&id=158mRV4hwjNL2JpmV4bc0Xhuzb0MmsVal" download="Dejana Dinica - Katalog.pdf" class="download-button">
+              <a href="HP_KATALOG_compressed.pdf" download="Dejana Dinica - Katalog.pdf" class="download-button" rel="noopener noreferrer">
                 Preuzmi katalog
               </a>
               <button @click="openGallery('dejana-dinica')" class="gallery-button">

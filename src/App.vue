@@ -1,8 +1,3 @@
-<script setup>
-import Header from './components/Header.vue'
-import Footer from './components/Footer.vue'
-</script>
-
 <template>
   <div id="app">
     <Header />
@@ -11,19 +6,12 @@ import Footer from './components/Footer.vue'
   </div>
 </template>
 
+<script setup>
+import Header from './components/Header.vue'
+import Footer from './components/Footer.vue'
+</script>
+
 <style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Arial', sans-serif;
-  line-height: 1.6;
-  color: #333;
-}
-
 #app {
   min-height: 100vh;
   display: flex;
@@ -32,5 +20,6 @@ body {
 
 main {
   flex: 1;
+  padding-top: 80px;
 }
 </style>
