@@ -40,7 +40,7 @@
     </section> -->
     <!-- ovde se vrati -->
 
-    <section class="contact-section">
+    <!-- <section class="contact-section">
       <div class="container">
         <h2>Kontakt</h2>
         <p>Ukoliko imate bilo kakvih pitanja slobodno nas kontaktirajte preko ove forme ili pozivom na broj telefona koji možete videti ispod.</p>
@@ -55,7 +55,7 @@
           </button>
         </form>
       </div>
-    </section>
+    </section> -->
   </main>
 </template>
 
